@@ -1,0 +1,12 @@
+.card {
+  padding: 20px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.01);
+}
+.card h2 {
+  font-family: monospace;
+  text-decoration: underline;
+  color: #514c5e;
+}
+
+/*# sourceMappingURL=Card.css.map */

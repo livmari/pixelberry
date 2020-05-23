@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import 'skeleton.css';
+@import 'Card.css';
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -48,6 +49,20 @@ a:hover {
   animation: infinite linear 5s shadow;
 }
 
+.welcome-section {
+  animation: 1 linear 2s fadeIn;
+}
+.welcome-section h1, .welcome-section .heart {
+  display: inline;
+}
+.welcome-section h1 {
+  margin-right: 10px;
+}
+.welcome-section .socials div {
+  display: block;
+  text-align: center;
+}
+
 @keyframes levitate {
   0%, 100% {
     margin-top: -2vh;
@@ -70,11 +85,13 @@ a:hover {
     width: 350px;
   }
 }
-.welcome-section h1, .welcome-section .heart {
-  display: inline;
-}
-.welcome-section h1 {
-  margin-right: 10px;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

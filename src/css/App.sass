@@ -1,10 +1,12 @@
 @import 'normalize.css'
 @import 'skeleton.css'
+@import 'Card.css'
 
 // Color palette
 $pineapple: #fee233
 $space-grey: #514c5e
 $fake-white: #eeedef
+$almost-white: rgba(0, 0, 0, 0.01)
 $fanta-pop: #ec6334
 $almost-peach: #f7d0be
 $grey-peach: #dcb9ac
@@ -43,13 +45,30 @@ a:hover
       position: absolute
       left: 50%
       transform: translateX(-50%)
+
     img:first-child
       width: 700px
       object-fit: cover
       animation: infinite linear 5s levitate
+
     img:nth-child(2)
       bottom: 0
       animation: infinite linear 5s shadow
+
+// Main content welcome section
+.welcome-section
+  animation: 1 linear 2s fadeIn
+
+  h1, .heart
+    display: inline
+
+  h1
+    margin-right: 10px
+
+  .socials
+    div
+      display: block
+      text-align: center
 
 @keyframes levitate
   0%, 100%
@@ -67,10 +86,8 @@ a:hover
   50%
     width: 350px
 
-// Main content welcome section
-.welcome-section
-  h1, .heart
-    display: inline
-
-  h1
-    margin-right: 10px
+@keyframes fadeIn
+  0%
+    opacity: 0
+  100%
+    opacity: 1
