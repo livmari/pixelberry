@@ -1,7 +1,7 @@
 import React from 'react';
 import Heart from "../../images/heart.svg";
 
-class Section extends React.Component {
+class Welcome extends React.Component {
     constructor(props) {
         super(props);
     }
@@ -29,4 +29,4 @@ class Section extends React.Component {
     }
 }
 
-export default Section;
+export default Welcome;
