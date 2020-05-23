@@ -13,21 +13,32 @@ $grey-peach: #dcb9ac
   box-sizing: border-box
   max-width: 100%
 
+body
+  color: $space-grey
+
+section
+  margin-bottom: 100px
+
 // Font styling
 h1
   font-family: monospace
   color: $fanta-pop
 
+a
+  color: $fanta-pop
+  text-decoration: underline
+  transition: 1s
+
+a:hover
+  color: $pineapple
+
 // Hero section
 .hero
-  h1, .heart
-    display: inline
-  h1
-    margin-right: 10px
   .zen
     position: relative
     height: 500px
     width: 100vw
+
     img
       position: absolute
       left: 50%
@@ -55,3 +66,11 @@ h1
     width: 300px
   50%
     width: 350px
+
+// Main content welcome section
+.welcome-section
+  h1, .heart
+    display: inline
+
+  h1
+    margin-right: 10px

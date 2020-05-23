@@ -5,17 +5,29 @@
   max-width: 100%;
 }
 
+body {
+  color: #514c5e;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
 h1 {
   font-family: monospace;
   color: #ec6334;
 }
 
-.hero h1, .hero .heart {
-  display: inline;
+a {
+  color: #ec6334;
+  text-decoration: underline;
+  transition: 1s;
 }
-.hero h1 {
-  margin-right: 10px;
+
+a:hover {
+  color: #fee233;
 }
+
 .hero .zen {
   position: relative;
   height: 500px;
@@ -57,6 +69,12 @@ h1 {
   50% {
     width: 350px;
   }
+}
+.welcome-section h1, .welcome-section .heart {
+  display: inline;
+}
+.welcome-section h1 {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=App.css.map */
