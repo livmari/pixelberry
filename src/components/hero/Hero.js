@@ -10,12 +10,10 @@ class Hero extends React.Component {
 
     render() {
         return(
-            <section className={'hero'}>
-                <AnimatedZen />
-                <h1>
-                    Hello world
-                </h1>
-                <img className={'heart'} src={Heart} alt={'Heart icon'} />
+            <section className={'hero row'}>
+                <div className={'twelve columns'}>
+                    <AnimatedZen/>
+                </div>
             </section>
         );
     }
