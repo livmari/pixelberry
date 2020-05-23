@@ -1,5 +1,24 @@
 * {
   box-sizing: border-box;
+  max-width: 100%;
+}
+
+.hero img {
+  width: 60vw;
+  object-fit: cover;
+  animation: infinite linear 5s levitate;
+}
+
+@keyframes levitate {
+  0%, 100% {
+    margin-top: -2vh;
+  }
+  25%, 75% {
+    margin-top: 0vh;
+  }
+  50% {
+    margin-top: 2vh;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
