@@ -1,12 +1,19 @@
 @import 'normalize.css';
 @import 'skeleton.css';
+/* ______________________ Default styling */
 * {
   box-sizing: border-box;
   max-width: 100%;
 }
 
-body {
-  color: #514c5e;
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* ______________________ Whitespace */
+header {
+  margin-bottom: 50px;
 }
 
 .container {
@@ -14,11 +21,48 @@ body {
   padding-bottom: 50px;
 }
 
-h1 {
+.welcome-section h1 {
+  margin-right: 10px;
+}
+
+.my-work {
+  padding-bottom: 150px;
+}
+
+/* ______________________ Typeface styling */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #514c5e;
+}
+
+h1, h2 {
   font-family: monospace;
   color: #ec6334;
 }
 
+h1 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.bouncy-btn p {
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer ul {
+  font-size: 1.3rem;
+}
+
+/* ______________________ Link styling */
 a {
   color: #ec6334;
   text-decoration: underline;
@@ -29,10 +73,25 @@ a:hover {
   color: #fee233;
 }
 
-header {
-  margin-bottom: 50px;
+/* ______________________ Slide out layes */
+.foreground-layer {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: 1s;
+  background: pink;
 }
 
+.hide-layer {
+  margin-left: -100vw;
+}
+
+.display-layer {
+  margin-left: 0vw;
+}
+
+/* ______________________ Header styling */
 .zen {
   position: relative;
   height: 500px;
@@ -53,18 +112,28 @@ header {
   animation: infinite linear 5s shadow;
 }
 
+/* ______________________ Main styling */
+/* __________ Welcome section */
 .welcome-section h1, .welcome-section .heart {
   display: inline;
 }
-.welcome-section h1 {
-  margin-right: 10px;
+
+/* ______________________ Footer styling */
+footer {
+  background: #eeedef;
 }
-.welcome-section .socials-container {
+footer ul {
+  list-style: none;
+}
+
+/* ______________________ Buttons */
+/* __________ Social link buttons */
+.socials-container {
   display: flex;
   align-content: stretch;
   margin-top: 10px;
 }
-.welcome-section .socials-container div {
+.socials-container div {
   flex-grow: 1;
   display: block;
   text-align: center;
@@ -74,27 +143,17 @@ header {
   opacity: 0.2;
 }
 
-.my-work {
-  padding-bottom: 150px;
-}
-
+/* __________ Boucny buttons */
 .bouncy-container {
   display: flex;
   align-content: stretch;
 }
 .bouncy-container .bouncy-btn {
+  display: block;
   flex-grow: 1;
   padding: 10px;
-  display: block;
   text-align: center;
   text-decoration: none;
-}
-.bouncy-container .bouncy-btn p {
-  margin: 0;
-  padding: 0;
-  font-family: monospace;
-  font-size: 2rem;
-  font-weight: bold;
 }
 .bouncy-container .bouncy-btn img {
   animation: infinite linear 3s bouncy;
@@ -105,15 +164,7 @@ header {
   transition: 0.2s;
 }
 
-footer {
-  margin: 0;
-  padding: 0;
-  background: #eeedef;
-}
-footer ul {
-  list-style: none;
-}
-
+/* ______________________ Keyframe animations */
 @keyframes levitate {
   0%, 100% {
     margin-top: -2vh;

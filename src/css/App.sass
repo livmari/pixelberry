@@ -1,29 +1,66 @@
 @import 'normalize.css'
 @import 'skeleton.css'
 
-// Color palette
+// ______________________ Color palette
 $pineapple: #fee233
 $space-grey: #514c5e
 $fake-white: #eeedef
 $almost-white: rgba(0, 0, 0, 0.01)
 $fanta-pop: #ec6334
 
+/* ______________________ Default styling */
 *
   box-sizing: border-box
   max-width: 100%
 
-body
-  color: $space-grey
+html, body
+  height: 100%
+  width: 100%
+
+/* ______________________ Whitespace */
+header
+  margin-bottom: 50px
 
 .container
   padding-top: 50px
   padding-bottom: 50px
 
-// Font styling
-h1
+.welcome-section
+  h1
+    margin-right: 10px
+
+.my-work
+  padding-bottom: 150px
+
+/* ______________________ Typeface styling */
+html
+  font-size: 62.5%
+
+body
+  font-size: 1.6rem
+  color: $space-grey
+
+h1, h2
   font-family: monospace
   color: $fanta-pop
 
+h1
+  font-size: 4.2rem
+
+h2
+  font-size: 3.5rem
+
+.bouncy-btn
+  p
+    font-family: monospace
+    font-size: 2rem
+    font-weight: bold
+
+footer
+  ul
+    font-size: 1.3rem
+
+/* ______________________ Link styling */
 a
   color: $fanta-pop
   text-decoration: underline
@@ -32,10 +69,26 @@ a
 a:hover
   color: $pineapple
 
-// Header section
-header
-  margin-bottom: 50px
+/* ______________________ Slide out layes */
+.foreground-layer
+  position: absolute
+  top: 0
+  height: 100vh
+  width: 100vw
+  transition: 1s
+  background: pink
 
+.hide-layer
+  margin-left: -100vw
+
+.display-layer
+  margin-left: 0vw
+//.background-layer
+  position: fixed
+  overflow: hidden
+
+
+/* ______________________ Header styling */
 .zen
   position: relative
   height: 500px
@@ -55,67 +108,54 @@ header
     bottom: 0
     animation: infinite linear 5s shadow
 
-// Main content
+/* ______________________ Main styling */
+/* __________ Welcome section */
 .welcome-section
   h1, .heart
     display: inline
 
-  h1
-    margin-right: 10px
+/* ______________________ Footer styling */
+footer
+  background: $fake-white
 
-  .socials-container
-    display: flex
-    align-content: stretch
-    margin-top: 10px
+  ul
+    list-style: none
 
-    div
-      flex-grow: 1
-      display: block
-      text-align: center
+/* ______________________ Buttons */
+/* __________ Social link buttons */
+.socials-container
+  display: flex
+  align-content: stretch
+  margin-top: 10px
+
+  div
+    flex-grow: 1
+    display: block
+    text-align: center
 
 .social-btn:hover
   opacity: .2
 
-.my-work
-  padding-bottom: 150px
-
-// Bouncy buttons
+/* __________ Boucny buttons */
 .bouncy-container
   display: flex
   align-content: stretch
 
   .bouncy-btn
+    display: block
     flex-grow: 1
     padding: 10px
-    display: block
     text-align: center
     text-decoration: none
-
-    p
-      margin: 0
-      padding: 0
-      font-family: monospace
-      font-size: 2rem
-      font-weight: bold
-
     img
       animation: infinite linear 3s bouncy
       transition: .2s
-
   .bouncy-btn:hover
     img
       animation-duration: .5s
       transition: .2s
 
-// Footer styling
-footer
-  margin: 0
-  padding: 0
-  background: $fake-white
-  ul
-    list-style: none
-
-// Keyframe animations
+/* ______________________ Keyframe animations */
 @keyframes levitate
   0%, 100%
     margin-top: -2vh
