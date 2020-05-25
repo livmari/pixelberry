@@ -63,10 +63,18 @@ header
   h1
     margin-right: 10px
 
-  .socials
+  .socials-container
+    display: flex
+    align-content: stretch
+    margin-top: 10px
+
     div
+      flex-grow: 1
       display: block
       text-align: center
+
+.social-btn:hover
+  opacity: .2
 
 .my-work
   padding-bottom: 150px
@@ -76,29 +84,34 @@ header
   display: flex
   align-content: stretch
 
-.bouncy-btn
-  flex-grow: 1
-  padding: 10px
-  display: block
-  text-align: center
-  text-decoration: none
+  .bouncy-btn
+    flex-grow: 1
+    padding: 10px
+    display: block
+    text-align: center
+    text-decoration: none
 
-  p
-    margin: 0
-    padding: 0
-    font-family: monospace
-    font-size: 2rem
-    font-weight: bold
+    p
+      margin: 0
+      padding: 0
+      font-family: monospace
+      font-size: 2rem
+      font-weight: bold
 
-  img
-    animation: infinite linear 3s bouncy
+    img
+      animation: infinite linear 3s bouncy
+      transition: .2s
+
+  .bouncy-btn:hover
+    img
+      animation-duration: .5s
+      transition: .2s
 
 // Footer styling
 footer
   margin: 0
   padding: 0
   background: $fake-white
-
   ul
     list-style: none
 

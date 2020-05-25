@@ -59,9 +59,19 @@ header {
 .welcome-section h1 {
   margin-right: 10px;
 }
-.welcome-section .socials div {
+.welcome-section .socials-container {
+  display: flex;
+  align-content: stretch;
+  margin-top: 10px;
+}
+.welcome-section .socials-container div {
+  flex-grow: 1;
   display: block;
   text-align: center;
+}
+
+.social-btn:hover {
+  opacity: 0.2;
 }
 
 .my-work {
@@ -72,23 +82,27 @@ header {
   display: flex;
   align-content: stretch;
 }
-
-.bouncy-btn {
+.bouncy-container .bouncy-btn {
   flex-grow: 1;
   padding: 10px;
   display: block;
   text-align: center;
   text-decoration: none;
 }
-.bouncy-btn p {
+.bouncy-container .bouncy-btn p {
   margin: 0;
   padding: 0;
   font-family: monospace;
   font-size: 2rem;
   font-weight: bold;
 }
-.bouncy-btn img {
+.bouncy-container .bouncy-btn img {
   animation: infinite linear 3s bouncy;
+  transition: 0.2s;
+}
+.bouncy-container .bouncy-btn:hover img {
+  animation-duration: 0.5s;
+  transition: 0.2s;
 }
 
 footer {

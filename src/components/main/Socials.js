@@ -33,10 +33,10 @@ class Socials extends React.Component {
 
     render() {
         return (
-            <div className={'socials row'}>
+            <div className={'socials-container row'}>
                 {this.state.socials.map((socials, index) => (
-                    <div className={'three columns'}>
-                        <a key={index.toString()} href={socials.link}>
+                    <div>
+                        <a className={'social-btn'} key={index.toString()} href={socials.link}>
                             <img src={socials.icon}/>
                         </a>
                     </div>
