@@ -20,20 +20,12 @@ class Socials extends React.Component {
                     icon: CodePen
                 },
                 {
-                    link: '',
-                    icon: Dribbble
-                },
-                {
                     link: 'https://www.instagram.com/livmarii/',
                     icon: Instagram
                 },
                 {
                     link: 'https://www.linkedin.com/in/liv-alterskjaer-b09b40196/',
                     icon: Linkedin
-                },
-                {
-                    link: 'https://www.facebook.com/pixelberry.se',
-                    icon: Facebook
                 }
             ]
         }
@@ -43,7 +35,7 @@ class Socials extends React.Component {
         return (
             <div className={'socials row'}>
                 {this.state.socials.map((socials, index) => (
-                    <div className={'two columns'}>
+                    <div className={'three columns'}>
                         <a key={index.toString()} href={socials.link}>
                             <img src={socials.icon}/>
                         </a>

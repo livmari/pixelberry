@@ -9,7 +9,7 @@ class Welcome extends React.Component {
 
     render() {
         return (
-            <section className={'row welcome-section'}>
+            <section className={'container welcome-section'}>
                 <div className={'row'}>
                     <div className={'twelve columns'}>
                         <h1>

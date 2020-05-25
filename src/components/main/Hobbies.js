@@ -1,8 +1,9 @@
 import React from 'react';
 
-class Services extends React.Component {
+class Hobbies extends React.Component {
     constructor(props) {
         super(props);
+
     }
 
     render() {
@@ -21,4 +22,4 @@ class Services extends React.Component {
     }
 }
 
-export default Services;
+export default Hobbies;
