@@ -1,6 +1,6 @@
 import React from 'react';
 import Heart from "../../images/heart.svg";
-import Socials from "./Socials";
+import Socials from "../buttons/Socials";
 
 class Welcome extends React.Component {
     constructor(props) {

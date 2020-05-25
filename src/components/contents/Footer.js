@@ -1,5 +1,5 @@
 import React from 'react';
-import BouncyBtn from "../BouncyBtn";
+import BouncyBtn from "../buttons/BouncyBtn";
 import LetterIcon from "../../images/letter.svg";
 import QuestionIcon from "../../images/question.svg";
 
