@@ -5,6 +5,8 @@ import Main from './components/contents/Main';
 import Footer from './components/contents/Footer';
 import Contact from './components/slides/Contact';
 import Faq from './components/slides/Faq';
+import Portfolio from './components/slides/Portfolio';
+import Projects from './components/slides/Projects';
 
 function App() {
     return (
@@ -14,6 +16,8 @@ function App() {
                 <Main/>
                 <Footer/>
             </div>
+            <Portfolio/>
+            <Projects/>
             <Contact/>
             <Faq/>
         </div>
