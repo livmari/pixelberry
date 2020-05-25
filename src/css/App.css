@@ -1,6 +1,5 @@
 @import 'normalize.css';
 @import 'skeleton.css';
-@import 'Card.css';
 * {
   box-sizing: border-box;
   max-width: 100%;
@@ -10,8 +9,9 @@ body {
   color: #514c5e;
 }
 
-section {
-  margin-bottom: 100px;
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 h1 {
@@ -29,29 +29,30 @@ a:hover {
   color: #fee233;
 }
 
-.hero .zen {
+header {
+  margin-bottom: 50px;
+}
+
+.zen {
   position: relative;
   height: 500px;
   width: 100vw;
 }
-.hero .zen img {
+.zen img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
-.hero .zen img:first-child {
+.zen img:first-child {
   width: 700px;
   object-fit: cover;
   animation: infinite linear 5s levitate;
 }
-.hero .zen img:nth-child(2) {
+.zen img:nth-child(2) {
   bottom: 0;
   animation: infinite linear 5s shadow;
 }
 
-.welcome-section {
-  animation: 1 linear 2s fadeIn;
-}
 .welcome-section h1, .welcome-section .heart {
   display: inline;
 }
@@ -61,6 +62,42 @@ a:hover {
 .welcome-section .socials div {
   display: block;
   text-align: center;
+}
+
+.my-work {
+  padding-bottom: 150px;
+}
+
+.bouncy-container {
+  display: flex;
+  align-content: stretch;
+}
+
+.bouncy-btn {
+  flex-grow: 1;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+.bouncy-btn p {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bouncy-btn img {
+  animation: infinite linear 3s bouncy;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: #eeedef;
+}
+footer ul {
+  list-style: none;
 }
 
 @keyframes levitate {
@@ -85,12 +122,12 @@ a:hover {
     width: 350px;
   }
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@keyframes bouncy {
+  0%, 100% {
+    transform: rotate(-5deg);
   }
-  100% {
-    opacity: 1;
+  50% {
+    transform: rotate(5deg);
   }
 }
 
