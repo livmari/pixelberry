@@ -44,7 +44,7 @@ class Footer extends React.Component {
                         <div className={'four columns'}>
                             <ul>
                                 <li>
-                                    illustration credit <a href={'https://www.ls.graphics/illustrations'}>Lstore
+                                    zen-dude illustration credit <a href={'https://www.ls.graphics/illustrations'}>Lstore
                                     Graphics</a>
                                 </li>
                                 <li>
