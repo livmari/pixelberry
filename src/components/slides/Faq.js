@@ -8,7 +8,7 @@ class Faq extends React.Component {
 
     render() {
         return (
-            <section className={'foreground-layer hide-layer'}>
+            <section className={'foreground-layer faq'}>
                 <div className={'container'}>
                     <h1>Hello world</h1>
                 </div>

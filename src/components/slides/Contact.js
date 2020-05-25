@@ -8,7 +8,7 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <section className={'foreground-layer hide-layer'}>
+            <section className={'foreground-layer contact'}>
                 <div className={'container'}>
 
                 </div>
