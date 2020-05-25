@@ -8,6 +8,12 @@ $fake-white: #eeedef
 $almost-white: rgba(0, 0, 0, 0.01)
 $fanta-pop: #ec6334
 
+// ______________________ Zen dude animation variables
+$zen-height: 500px
+$zen-width: 100%
+$zen-dude-width: $zen-width - 20%
+$zen-shadow-width: $zen-dude-width - 10%
+
 /* ______________________ Default styling */
 *
   box-sizing: border-box
@@ -69,7 +75,7 @@ a
 a:hover
   color: $pineapple
 
-/* ______________________ Slide out layes */
+/* ______________________ Slide out layers */
 .foreground-layer
   position: absolute
   top: 0
@@ -78,11 +84,14 @@ a:hover
   transition: 1s
   background: pink
 
-.hide-layer
+.portfolio, .projects
+  margin-top: -100vw
+
+.contact
   margin-left: -100vw
 
-.display-layer
-  margin-left: 0vw
+.faq
+  margin-left: 200vw
 //.background-layer
   position: fixed
   overflow: hidden
@@ -93,7 +102,6 @@ a:hover
   position: relative
   height: 500px
   width: 100vw
-
   img
     position: absolute
     left: 50%
@@ -108,6 +116,8 @@ a:hover
     bottom: 0
     animation: infinite linear 5s shadow
 
+@media only screen and (max-width: 549px)
+
 /* ______________________ Main styling */
 /* __________ Welcome section */
 .welcome-section
@@ -120,6 +130,11 @@ footer
 
   ul
     list-style: none
+
+  .container
+    .row
+      div:nth-child(2)
+        text-align: right
 
 /* ______________________ Buttons */
 /* __________ Social link buttons */
@@ -160,7 +175,7 @@ footer
   0%, 100%
     margin-top: -2vh
   25%, 75%
-    margin-top: 0vh
+    margin-top: 0
   50%
     margin-top: 2vh
 
@@ -177,3 +192,10 @@ footer
     transform: rotate(-5deg)
   50%
     transform: rotate(5deg)
+
+//
+  DesktopHD: 1200px
+  Desktop: 1000px
+  Tablet: 750px
+  Phablet: 550px
+  Mobile: 400px

@@ -73,7 +73,7 @@ a:hover {
   color: #fee233;
 }
 
-/* ______________________ Slide out layes */
+/* ______________________ Slide out layers */
 .foreground-layer {
   position: absolute;
   top: 0;
@@ -83,12 +83,16 @@ a:hover {
   background: pink;
 }
 
-.hide-layer {
+.portfolio, .projects {
+  margin-top: -100vw;
+}
+
+.contact {
   margin-left: -100vw;
 }
 
-.display-layer {
-  margin-left: 0vw;
+.faq {
+  margin-left: 200vw;
 }
 
 /* ______________________ Header styling */
@@ -122,8 +126,13 @@ a:hover {
 footer {
   background: #eeedef;
 }
+
 footer ul {
   list-style: none;
+}
+
+footer .container .row div:nth-child(2) {
+  text-align: right;
 }
 
 /* ______________________ Buttons */
@@ -170,7 +179,7 @@ footer ul {
     margin-top: -2vh;
   }
   25%, 75% {
-    margin-top: 0vh;
+    margin-top: 0;
   }
   50% {
     margin-top: 2vh;
