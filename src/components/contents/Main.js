@@ -1,6 +1,6 @@
 import React from 'react';
 import Welcome from "./Welcome";
-import MyWork from "./MyWork";
+import Work from "./Work";
 
 class Main extends React.Component {
     constructor(props) {
@@ -12,7 +12,7 @@ class Main extends React.Component {
         return (
             <div>
                 <Welcome/>
-                <MyWork/>
+                <Work/>
             </div>
         );
     }
