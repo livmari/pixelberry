@@ -1,15 +1,21 @@
 import React from 'react';
 import './css/App.css';
-import Header from './components/header/Header';
-import Main from './components/main/Main';
-import Footer from './components/footer/Footer';
+import Header from './components/contents/Header';
+import Main from './components/contents/Main';
+import Footer from './components/contents/Footer';
+import Contact from './components/slides/Contact';
+import Faq from './components/slides/Faq';
 
 function App() {
     return (
         <div className='app'>
-            <Header/>
-            <Main/>
-            <Footer/>
+            <div className={'background-layer'}>
+                <Header/>
+                <Main/>
+                <Footer/>
+            </div>
+            <Contact/>
+            <Faq/>
         </div>
     );
 }
