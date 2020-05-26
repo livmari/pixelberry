@@ -3,6 +3,10 @@ import React from 'react';
 class Work extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            portfolioClick: '',
+            projectsClick: ''
+        }
 
     }
 
@@ -56,16 +60,17 @@ class Work extends React.Component {
                             using my 'tech-savvy' for things other than helping my mum set up her printer.
                         </p>
                         <p>
-                            I am constatly looking for ways to get more involved in issues I care about, and welcome any
+                            I am constantly looking for ways to get more involved in issues I care about, and welcome
+                            any
                             suggestions.
                         </p>
                     </div>
                 </div>
                 <div className={'row'}>
-                    <button className={'seven columns'}>
+                    <button className={'seven columns'} onClick={this.props.portfolioClick}>
                         View my portfolio
                     </button>
-                    <button className={'five columns'}>
+                    <button className={'five columns'} onClick={this.props.projectsClick}>
                         Read about my projects
                     </button>
                 </div>
