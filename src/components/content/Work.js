@@ -7,7 +7,6 @@ class Work extends React.Component {
             portfolioClick: '',
             projectsClick: ''
         }
-
     }
 
     render() {

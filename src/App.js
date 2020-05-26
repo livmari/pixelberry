@@ -10,12 +10,21 @@ import Welcome from "./components/content/Welcome";
 import Work from "./components/content/Work";
 
 function App() {
+
+    function openPortfolio() {
+        alert('Hello world!');
+    }
+
+    function openProjects() {
+        alert('Hello world!');
+    }
+
     return (
         <div className='app'>
             <div className={'background-layer'}>
                 <Header/>
                 <Welcome/>
-                <Work/>
+                <Work portfolioClick={openPortfolio} projectsClick={openProjects}/>
                 <Footer/>
             </div>
             <Portfolio/>
