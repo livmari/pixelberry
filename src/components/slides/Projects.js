@@ -1,15 +1,19 @@
 import React from 'react';
+import WorkInProgress from "./WorkInProgress";
 
 class Projects extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            sectionClasses: 'foregroud-layer contact'
+        }
     }
 
     render() {
         return (
-            <div className={'foreground-layer projects'}>
-
+            <div className={this.props.sectionClasses}>
+                <div className={'container'}>
+                </div>
             </div>
         );
     }

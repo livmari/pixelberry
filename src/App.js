@@ -11,12 +11,22 @@ import Work from "./components/content/Work";
 
 function App() {
 
+    const oopsie = 'This is a work in progress, check back soon :)';
+
     function openPortfolio() {
-        alert('Hello world!');
+        alert(oopsie);
     }
 
     function openProjects() {
-        alert('Hello world!');
+        alert(oopsie);
+    }
+
+    function openContactForm() {
+        alert(oopsie);
+    }
+
+    function openFaq() {
+        alert(oopsie);
     }
 
     return (
@@ -25,7 +35,7 @@ function App() {
                 <Header/>
                 <Welcome/>
                 <Work portfolioClick={openPortfolio} projectsClick={openProjects}/>
-                <Footer/>
+                <Footer contactClick={openContactForm} faqClick={openFaq}/>
             </div>
             <Portfolio/>
             <Projects/>
