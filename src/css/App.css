@@ -13,10 +13,6 @@ html, body {
   width: 100%;
 }
 
-body {
-    overflow: hidden;
-}
-
 /* ______________________ Whitespace */
 header {
   margin-bottom: 50px;
@@ -78,36 +74,32 @@ a {
 }
 
 a:hover {
-    color: #fee233;
+  color: #fee233;
 }
 
 /* ______________________ Slide out layers */
 .foreground-layer, .background-layer {
-    position: absolute;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .foreground-layer {
-    transition: 1s;
-    background: #514c5e;
-}
-
-.background-layer {
-    overflow: scroll;
+  transition: 1s;
+  background: #514c5e;
 }
 
 .portfolio {
-    margin-top: -100vh;
+  margin-top: -100vh;
 }
 
 .projects {
-    margin-left: 200vw;
+  margin-left: 200vw;
 }
 
 .contact {
-    margin-left: -100vw;
+  margin-left: -100vw;
 }
 
 .faq {
@@ -230,6 +222,73 @@ footer .container .row div:nth-child(2) {
   }
   50% {
     transform: rotate(5deg);
+  }
+}
+@media only screen and (max-width: 549px) {
+  /* ______________________ Whitespace */
+  header {
+    margin-bottom: 20px;
+  }
+
+  /* ______________________ Typeface styling */
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.9rem;
+  }
+
+  footer ul {
+    font-size: 1.2rem;
+  }
+
+  /* ______________________ Header styling */
+  .zen {
+    height: 400px;
+  }
+
+  /* ______________________ Main styling */
+  /* ______________________ Footer styling */
+  footer .container .row div:nth-child(2), footer .container .row div {
+    text-align: center;
+  }
+
+  /* ______________________ Buttons */
+  /* __________ Social link buttons */
+  .socials-container {
+    margin-top: 20px;
+  }
+
+  /* __________ Boucny buttons */
+  .bouncy-container {
+    display: flex;
+    align-content: stretch;
+  }
+  .bouncy-container .bouncy-btn {
+    padding: 20px;
+  }
+
+  /* __________ Work section buttons */
+  .my-work button:first-child {
+    margin-bottom: 20px;
+  }
+
+  /* ______________________ Keyframe animations */
+  @keyframes shadow {
+    0%, 100% {
+      width: 150px;
+    }
+    25%, 75% {
+      width: 175px;
+    }
+    50% {
+      width: 200px;
+    }
   }
 }
 
