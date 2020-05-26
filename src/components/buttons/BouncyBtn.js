@@ -4,7 +4,7 @@ class BouncyBtn extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            link: '',
+            bouncyClick: '',
             src: '',
             p: ''
         }
@@ -12,7 +12,7 @@ class BouncyBtn extends React.Component {
 
     render() {
         return (
-            <a className={'bouncy-btn'} href={this.props.link}>
+            <a className={'bouncy-btn'} href={void (0)} onClick={this.props.bouncyClick}>
                 <img src={this.props.src} alt={'Icon'}/>
                 <p>
                     {this.props.p}

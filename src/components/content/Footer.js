@@ -7,7 +7,7 @@ class Footer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            year: this.getYear()
+            year: this.getYear(),
         }
     }
 
@@ -18,6 +18,13 @@ class Footer extends React.Component {
         return (year);
     }
 
+    openContactForm() {
+        alert('Hello world!');
+    }
+
+    openFaq() {
+        alert('Hello world!');
+    }
 
     render() {
         return (
@@ -25,8 +32,8 @@ class Footer extends React.Component {
                 <section className={'container'}>
                     <div className={'row'}>
                         <div className={'four columns bouncy-container'}>
-                            <BouncyBtn link={'#'} src={LetterIcon} p={'Contact me'}/>
-                            <BouncyBtn link={'#'} src={QuestionIcon} p={'FAQ'}/>
+                            <BouncyBtn bouncyClick={this.openContactForm} src={LetterIcon} p={'Contact me'}/>
+                            <BouncyBtn bouncyClick={this.openFaq} src={QuestionIcon} p={'FAQ'}/>
                         </div>
                         <div className={'four columns'}>
                             <ul>
