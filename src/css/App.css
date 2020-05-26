@@ -253,6 +253,10 @@ footer .container .row div:nth-child(2) {
   }
 
   /* ______________________ Main styling */
+  .my-work ul {
+    font-size: 1.3rem;
+  }
+
   /* ______________________ Footer styling */
   footer .container .row div:nth-child(2), footer .container .row div {
     text-align: center;
