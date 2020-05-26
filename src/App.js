@@ -1,13 +1,13 @@
 import React from 'react';
 import './css/App.css';
-import Header from './components/contents/Header';
-import Footer from './components/contents/Footer';
+import Header from './components/content/Header';
+import Footer from './components/content/Footer';
 import Contact from './components/slides/Contact';
 import Faq from './components/slides/Faq';
 import Portfolio from './components/slides/Portfolio';
 import Projects from './components/slides/Projects';
-import Welcome from "./components/contents/Welcome";
-import Work from "./components/contents/Work";
+import Welcome from "./components/content/Welcome";
+import Work from "./components/content/Work";
 
 function App() {
     return (
