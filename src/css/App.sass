@@ -26,7 +26,7 @@ html, body
   width: 100%
 
 body
-  overflow-x: hidden
+  overflow: hidden
 
 /* ______________________ Whitespace */
 header
@@ -83,26 +83,30 @@ a:hover
   color: $pineapple
 
 /* ______________________ Slide out layers */
-.foreground-layer
+.foreground-layer, .background-layer
   position: absolute
   top: 0
   height: 100vh
   width: 100vw
-  transition: 1s
-  background: pink
 
-.portfolio, .projects
-  margin-top: -100vw
+.foreground-layer
+  transition: 1s
+  background: $space-grey
+
+.background-layer
+  overflow: scroll
+
+.portfolio
+  margin-top: -100vh
+
+.projects
+  margin-left: 200vw
 
 .contact
   margin-left: -100vw
 
 .faq
   margin-left: 200vw
-//.background-layer
-  position: fixed
-  overflow: hidden
-
 
 /* ______________________ Header styling */
 .zen

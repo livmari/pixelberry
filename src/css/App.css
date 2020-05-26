@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* ______________________ Whitespace */
@@ -78,25 +78,36 @@ a {
 }
 
 a:hover {
-  color: #fee233;
+    color: #fee233;
 }
 
 /* ______________________ Slide out layers */
-.foreground-layer {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  transition: 1s;
-  background: pink;
+.foreground-layer, .background-layer {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
-.portfolio, .projects {
-  margin-top: -100vw;
+.foreground-layer {
+    transition: 1s;
+    background: #514c5e;
+}
+
+.background-layer {
+    overflow: scroll;
+}
+
+.portfolio {
+    margin-top: -100vh;
+}
+
+.projects {
+    margin-left: 200vw;
 }
 
 .contact {
-  margin-left: -100vw;
+    margin-left: -100vw;
 }
 
 .faq {
